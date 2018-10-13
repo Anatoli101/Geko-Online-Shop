@@ -1,0 +1,215 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+  box-sizing:border-box;
+}
+html, body{
+height: 100%;
+}
+.main, body{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  align-items:center;
+  position: absolute;
+  margin-top:15px ;
+}
+#logo{
+  width: 100vw;
+}
+#logo img{
+  max-width: 100%;
+  max-height: 100%;
+  max-width:170px;
+  min-width:90px;
+  display: flex;
+  margin: 0 auto;
+}
+ul{
+  list-style:none;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  width: 30vw;
+  font-family: 'Montserrat';
+}
+li{
+  display: inline block;
+  justify-content: space-around;
+  color:#fff
+}
+li a {
+  text-decoration:none;
+  color: #fff;
+  text-transform:uppercase;
+}
+
+
+.nazarFoto {
+			background-image: url("http://i.piccy.info/i9/5b8ee0673242b733f8a7429d8c5866f3/1536354879/178297/1268078/nazar.jpg") ;
+			background-position: right center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:    cover;
+			background-color: #999;
+      height: 100%;
+  display: block;
+
+}
+.paralax1 {
+  background: url("http://i.piccy.info/i9/9ef7b5f31d4c3be84b93e88ea4c7dd68/1536949201/125451/1268078/Geko_3.jpg") no-repeat fixed center center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  padding: 115px 0px;
+}
+
+.paralax1:before {
+  content: "";
+  background: rgba(4, 8, 29, 0.7);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.titleParalax{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-align: center;
+}
+.titleParalax h2{
+  font-size: 37px;
+}
+.titleParalax{
+  font-family: 'Montserrat',sans-serif;
+}
+.wrap{
+  display: block;
+}
+
+    .productArea{
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      padding: 50px 30px;
+    }
+    .row {
+      margin: 0 auto;
+      min-width:1200px;
+      padding: 15px;
+      flex: 0 0 calc( 33% - 30px );
+      min-width: 300px;
+      display: flex;
+      flex-direction: row;
+    }
+    .prod {
+    min-height: 580px;
+    max-width: 39px;
+    margin: 0px auto 30px;
+    }
+
+
+.prod img{
+  max-width: 100%;
+}
+
+.infor{
+    border: 1px solid #ebebeb;
+    border-top: 0px;
+    padding: 30px 35px;
+}
+.prod p{
+    font-size: 20px;
+    line-height: 26px;
+    color: #51545f;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 15px 0px 10px 0px;
+}
+
+.prod h4{
+    font-size: 21px;
+    color: #232d37;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+}
+
+p, h4{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:red;
+  transition: all 400ms linear 0s;
+}
+.row .prod {
+  overflow: hidden;
+}
+
+.prod img {
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+}
+
+.prod img:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.prod h4:hover{
+  color:red;
+}
+.prod:hover{
+  box-shadow: 0px 25px 49px 0px rgba(58, 74, 88, 0.1);
+    transition: all 400ms linear 0s;
+}
+h3{
+  color:red;
+  margin:0 !important;
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size:25px;
+}
+.arrow img{
+  bottom:0;
+  position: absolute;
+  color: white;
+  z-index: 10;
+  width: 100vw;
+  display: flex;
+  max-width:70px ;
+  margin: 0 auto;
+  left:50%;
+  animation: bounce 2s infinite;;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
